@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+    <!--[if IE 9 ]><html class="ie9"><![endif]-->
+    
+<!-- Mirrored from 192.185.228.226/projects/ma/v1-4-1/jQuery/animations.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Aug 2015 06:25:19 GMT -->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Material Admin</title>
+        
+        <!-- Vendor CSS -->
+        <link href="vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/sweetalert/dist/sweetalert-override.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/material-design-iconic-font/css/material-design-iconic-font.min.css" rel="stylesheet">
+        <link href="vendors/socicon/socicon.min.css" rel="stylesheet">
+            
+        <!-- CSS -->
+        <link href="css/app.min.1.css" rel="stylesheet">
+        <link href="css/app.min.2.css" rel="stylesheet">
+            
+        <!-- Following CSS codes are used only fore demo purposes thus you can remove anytime -->
+        <style type="text/css">
+            .Helpline h2{
+                color: #fff !important;
+                margin: 0 !important;
+                font-size: 24px !important;
+                font-weight: 500 !important;
+                
+            }
+            .animation-demo {
+                margin: 25px -6px 0;
+                margin-bottom: -10px;
+            }
+            
+            .card img {
+                width: 100%;
+                z-index: 1;
+                position: relative;
+            }
+            
+            .animation-demo .col-xs-6 {
+                padding: 0 6px;
+                margin-bottom: 12px;
+            }
+            
+            .animation-demo .btn {
+                width: 100%;
+                text-transform: none;
+            }
+            .service-body{
+                padding-top: 25px;
+            }
+            .card p a{
+                color: #5e5e5e !important;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header id="header">
+            <ul class="header-inner">
+                <li id="menu-trigger" data-trigger="#sidebar">
+                    <div class="line-wrap">
+                        <div class="line top"></div>
+                        <div class="line center"></div>
+                        <div class="line bottom"></div>
+                    </div>
+                </li>
+                <li class=" Helpline">
+                    <h2>Youth Helpline...<i class="md md-phone-iphone"></i></h2>
+                </li>
+            
+            </ul>
+            
+            <!-- Top Search Content -->
+            <div id="top-search-wrap">
+                <input type="text">
+                <i id="top-search-close">&times;</i>
+            </div>
+        </header>
+    
+        <section id="main">
+            <aside id="sidebar">
+                <div class="sidebar-inner c-overflow">
+                    <div class="profile-menu">
+                        <a href="#">
+                            <div class="profile-pic">
+                                <img src="img/profile-pics/1.jpg" alt="">
+                            </div>
+
+                            <div class="profile-info">
+                                Malinda Hollaway
+
+                                <i class="md md-arrow-drop-down"></i>
+                            </div>
+                        </a>
+
+                        <ul class="main-menu">
+                            <li>
+                                <a href="profile.html"><i class="md md-person"></i> View Profile</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="md md-edit"></i> Edit Profile</a>
+                            </li>
+                            <li>
+                                <a href="resume.html"><i class="md md-settings"></i> Resume Upload</a>
+                            </li>
+                            <li>
+                                <a href="login.html"><i class="md md-history"></i> Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="main-menu">
+                        <li><a href="index.html"><i class="md md-home"></i> Home</a></li>
+                        <li><a href="career_guidance.html"><i class="md md-person-add"></i> Career Guidance</a></li>
+                        <li><a href="counselling.html"><i class="md md-account-balance"></i> Counselling</a></li>
+                        <li><a href="bank_loan.html"><i class="md md-home"></i> Bank Loan Support</a></li>
+                        <li><a href="entrepreneurship.html"><i class="md md-work"></i> Entrepreuership</a></li>
+                        <li><a href="job_seeking.html"><i class="md md-person"></i> Job Seeking</a></li>
+                    </ul>
+                </div>
+            </aside>
+            
+    
+            <section id="content">
+                <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Job Seeking<small>Post your queries get clarity and confidence</small></h2>
+                            </div>
+                            
+                            <div class="card-body card-padding">
+                                <img src="img/headers/sm/1.png" alt="">
+                                    
+                                <div class="row service-body">
+                                    <div class="col-sm-12 col-xs-12"><p><a href="#"> <button class="btn bgm-teal btn-icon waves-effect waves-circle waves-float"><i class="md md-arrow-forward"></i></button>&nbsp;&nbsp;Job Openings</a></p></div>
+                                    <div class="col-sm-12 col-xs-12"><p><a href="#"><button class="btn bgm-teal btn-icon waves-effect waves-circle waves-float"><i class="md md-arrow-forward"></i></button>&nbsp;&nbsp;Job Referrals</a></p></div>
+                                    <div class="col-sm-12 col-xs-12"><p><a href="#"><button class="btn bgm-teal btn-icon waves-effect waves-circle waves-float"><i class="md md-arrow-forward"></i></button>&nbsp;&nbsp;Resume Upload</a></p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </section>
+        
+        <footer id="footer" style=" padding-top:0px !important;"> 
+            Copyright &copy; 2015 Material Admin
+            
+            <ul class="f-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </footer>
+        
+        <!-- Older IE warning message -->
+        <!--[if lt IE 9]>
+            <div class="ie-warning">
+                <h1 class="c-white">Warning!!</h1>
+                <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+                <div class="iew-container">
+                    <ul class="iew-download">
+                        <li>
+                            <a href="http://www.google.com/chrome/">
+                                <img src="img/browsers/chrome.png" alt="">
+                                <div>Chrome</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.mozilla.org/en-US/firefox/new/">
+                                <img src="img/browsers/firefox.png" alt="">
+                                <div>Firefox</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.opera.com">
+                                <img src="img/browsers/opera.png" alt="">
+                                <div>Opera</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.apple.com/safari/">
+                                <img src="img/browsers/safari.png" alt="">
+                                <div>Safari</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                                <img src="img/browsers/ie.png" alt="">
+                                <div>IE (New)</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p>Sorry for the inconvenience!</p>
+            </div>   
+        <![endif]-->
+
+        <!-- Javascript Libraries -->
+        <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <script src="vendors/bower_components/jquery.nicescroll/jquery.nicescroll.min.js"></script>
+        <script src="vendors/bower_components/Waves/dist/waves.min.js"></script>
+        <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+        <script src="vendors/bower_components/sweetalert/dist/sweetalert.min.js"></script>
+        
+        <!-- Placeholder for IE9 -->
+        <!--[if IE 9 ]>
+            <script src="vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+        <![endif]-->
+        
+        <script src="js/functions.js"></script>
+        <script src="js/demo.js"></script>
+    
+        <!-- Following is only for demo purpose. You may ignore this when you implement -->
+
+    
+    </body>
+
+<!-- Mirrored from 192.185.228.226/projects/ma/v1-4-1/jQuery/animations.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Aug 2015 06:25:35 GMT -->
+</html>
