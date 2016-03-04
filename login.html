@@ -53,7 +53,7 @@
                 </label>
             </div>
             
-            <a href="service.html" class="btn btn-login btn-danger btn-float"><i class="md md-arrow-forward"></i></a>
+            <a class="btn btn-login btn-danger btn-float"><i class="md md-arrow-forward"></i></a>
             
             <ul class="login-navigation">
                 <li data-block="#l-register" class="bgm-red">Register</li>
@@ -66,33 +66,33 @@
             <div class="input-group m-b-20">
                 <span class="input-group-addon"><i class="md md-person"></i></span>
                 <div class="fg-line">
-                    <input type="text" class="form-control" placeholder="Username">
+                    <input type="text" class="form-control" id="Username" placeholder="Username">
                 </div>
             </div>
             
             <div class="input-group m-b-20">
                 <span class="input-group-addon"><i class="md md-mail"></i></span>
                 <div class="fg-line">
-                    <input type="text" class="form-control" placeholder="Email Address">
+                    <input type="text" class="form-control" id="EmailAddress" placeholder="Email Address">
                 </div>
             </div>
             <div class="input-group m-b-20">
                 <span class="input-group-addon"><i class="md md-local-phone"></i></span>
                 <div class="fg-line">
-                    <input type="text" class="form-control" placeholder="Phone Number">
+                    <input type="text" class="form-control"id="Phone" placeholder="Phone Number">
                 </div>
             </div>
             <div class="input-group  m-b-20 custom-text-area">
                 <span class="input-group-addon" style="vertical-align: top"><i class="md md-location-on"></i></span>
                 <div class="fg-line">    
 <!--                    <input type="text" placeholder="Home Address" class="form-control">
--->                    <textarea placeholder="Contact Address" rows="2" class="form-control"></textarea>
+-->                    <textarea placeholder="Contact Address" id="Address"rows="2" class="form-control"></textarea>
                 </div>
             </div>
             <div class="input-group m-b-20">
                 <span class="input-group-addon"><i class="md md-accessibility"></i></span>
                 <div class="fg-line">
-                    <input type="password" class="form-control" placeholder="Password">
+                    <input type="password" class="form-control" id="Password" placeholder="Password">
                 </div>
             </div>
 
@@ -106,7 +106,7 @@
                 </label>
             </div>
             
-            <a href="service.html" class="btn btn-login btn-danger btn-float"><i class="md md-arrow-forward"></i></a>
+            <a onclick="Register()" class="btn btn-login btn-danger btn-float"><i class="md md-arrow-forward"></i></a>
             
             <ul class="login-navigation">
                 <li data-block="#l-login" class="bgm-green">Login</li>
@@ -193,3 +193,21 @@
 
 <!-- Mirrored from 192.185.228.226/projects/ma/v1-4-1/jQuery/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Aug 2015 06:26:59 GMT -->
 </html>
+<script>
+    function Register() {
+        var Username=$("#Username").val();
+        var EmailAddress=$("#EmailAddress").val();
+        var Phone=$("#Phone").val();
+        var Address=$("#Address").val();
+        var Password=$("#Password").val();
+	$.ajax({
+	    type: "POST",
+            dataType : 'json',   //you may use jsonp for cross origin request
+	    url: "http://goodletschool.com/demo/app/index.php",
+	    data:{Username:Username,EmailAddress:EmailAddress,Phone:Phone,Address:Address,Password:Password} ,
+	    success: function (response){
+	    },
+	});
+    }
+    
+</script>
