@@ -32,14 +32,14 @@
             <div class="input-group m-b-20">
                 <span class="input-group-addon"><i class="md md-person"></i></span>
                 <div class="fg-line">
-                    <input type="text" class="form-control" placeholder="Username">
+                    <input type="text" class="form-control"id="LoginEmailAddress" placeholder="Username">
                 </div>
             </div>
             
             <div class="input-group m-b-20">
                 <span class="input-group-addon"><i class="md md-accessibility"></i></span>
                 <div class="fg-line">
-                    <input type="password" class="form-control" placeholder="Password">
+                    <input type="password" class="form-control" id="LoginPassword"placeholder="Password">
                 </div>
             </div>
             
@@ -53,7 +53,7 @@
                 </label>
             </div>
             
-            <a class="btn btn-login btn-danger btn-float"><i class="md md-arrow-forward"></i></a>
+            <a class="btn btn-login btn-danger btn-float" href="login()"><i class="md md-arrow-forward"></i></a>
             
             <ul class="login-navigation">
                 <li data-block="#l-register" class="bgm-red">Register</li>
@@ -219,5 +219,26 @@
 	    },
 	});
     }
-    
+    function login() {
+        var LoginEmailAddress=$("#LoginEmailAddress").val();
+        var LoginPassword=$("#LoginPassword").val();
+	$.ajax({
+	    type: "POST",
+            dataType : 'json',   //you may use jsonp for cross origin request
+	    url: "http://goodletschool.com/demo/app/login.php",
+	    data:{EmailAddress:LoginEmailAddress,Password:LoginPassword} ,
+	    success: function (json){
+		if (json.login_status!='NO') {
+				window.open('profile.html', '_blank','location=no');
+				
+				localStorage.setItem("Username", json.user_name);
+				localStorage.setItem("EmailAddress", json.email);
+				localStorage.setItem("Phone", json.phone);
+				localStorage.setItem("Address", json.address);
+			}else{
+				alert('Incorrect Username and Password');
+			}
+	    },
+	});
+    }
 </script>
