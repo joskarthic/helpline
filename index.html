@@ -202,9 +202,20 @@
         var Password=$("#Password").val();
 	$.ajax({
 	    type: "POST",
-	    url: "http://goodletschool.com/demo/app/",
+            dataType : 'json',   //you may use jsonp for cross origin request
+	    url: "http://goodletschool.com/demo/app/index.php",
 	    data:{Username:Username,EmailAddress:EmailAddress,Phone:Phone,Address:Address,Password:Password} ,
-	    success: function (response){
+	    success: function (json){
+		if (json.login_status!='NO') {
+				window.open('profile.html', '_blank','location=no');
+				
+				localStorage.setItem("Username", json.user_name);
+				localStorage.setItem("EmailAddress", json.email);
+				localStorage.setItem("Phone", json.phone);
+				localStorage.setItem("Address", json.address);
+			}else{
+				alert('Incorrect Username and Password');
+			}
 	    },
 	});
     }
