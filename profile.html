@@ -111,13 +111,13 @@
                             </div>
                             
                             <div class="pv-body">
-                                <h2>Malinda Hollaway</h2>
+                                <h2 id="Username"></h2>
                                 <small>Praesent vitae justo purus. In hendrerit lorem nislac lacinia urnaunc vitae ante id magna </small>
                             
                                 <ul class="pv-contact">
-                                    <li><i class="md md-room"></i> Muthialpet, Puducherry</li>
-                                    <li><i class="md md-email"></i> saravanan@webbylogic.com</li>
-                                    <li><i class="md md-phone"></i> +91 9655507090</li>
+                                    <li><i class="md md-room"></i> <span id="Address"></span></li>
+                                    <li><i class="md md-email"></i> <span id="Email"></span></li>
+                                    <li><i class="md md-phone"></i><span id="Phone"> </span></li>
 
                                 </ul>
                                 
@@ -214,6 +214,13 @@
         
         <script src="js/functions.js"></script>
         <script src="js/demo.js"></script>
+        <script>
+            $("#Username").val(localStorage.getItem('Username'));
+            $("#Address").val(localStorage.getItem('EmailAddress'));
+            $("#Phone").val(localStorage.getItem('Phone'));
+            $("#Email").val(localStorage.getItem('Address'));
+
+        </script>
     </body>
   
 <!-- Mirrored from 192.185.228.226/projects/ma/v1-4-1/jQuery/widgets.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Aug 2015 06:24:46 GMT -->
