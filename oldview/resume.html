@@ -1,26 +1,29 @@
 <!DOCTYPE html>
     <!--[if IE 9 ]><html class="ie9"><![endif]-->
     
-<!-- Mirrored from 192.185.228.226/projects/ma/v1-4-1/jQuery/icons.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Aug 2015 06:25:35 GMT -->
+<!-- Mirrored from 192.185.228.226/projects/ma/v1-4-1/jQuery/animations.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Aug 2015 06:25:19 GMT -->
 <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Material Admin</title>
-    
+        
         <!-- Vendor CSS -->
         <link href="vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
         <link href="vendors/bower_components/sweetalert/dist/sweetalert-override.min.css" rel="stylesheet">
         <link href="vendors/bower_components/material-design-iconic-font/css/material-design-iconic-font.min.css" rel="stylesheet">
         <link href="vendors/socicon/socicon.min.css" rel="stylesheet">
-    
+            
         <!-- CSS -->
         <link href="css/app.min.1.css" rel="stylesheet">
         <link href="css/app.min.2.css" rel="stylesheet">
-        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+            
         <!-- Following CSS codes are used only fore demo purposes thus you can remove anytime -->
         <style type="text/css">
+            .animation-demo {
+                margin: 25px -6px 0;
+                margin-bottom: -10px;
+            }
             .Helpline h2{
                 color: #fff !important;
                 margin: 0 !important;
@@ -28,62 +31,7 @@
                 font-weight: 500 !important;
                 
             }
-           .card-body .md, .card-body .socicon {
-                font-size: 23px;
-                vertical-align: middle;
-        
-            }
-            .card-menu{
-            box-shadow: 0 2px 10px -11px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
-                
-            }
-            .card-menu p{
-                padding: 10px 0;
-                margin: 0px !important;
-            }
-            .card{
-            box-shadow: none;
-            margin-bottom: 0px; 
-
-            }
-            .card-body .col-sm-4 {
-                padding: 0 7px;
-
-            }
-            .card-body{
-                font-size: 18px;
-            }
             
-            .card-body .col-sm-1 p {
-                padding: 8px;
-                border-radius: 2px;
-                margin-bottom: 0;
-
-                color: black !important;
-            }
-            
-            .card-body .col-sm-4 p:hover {
-                background: #eee;
-            }
-            .card p a{
-                color: #5e5e5e !important;
-            }
-     /*       .card p i{
-                color: white !important;
-            }
-            .card p {
-                text-align: left !important;
-                width: 100% !important;*/
-            }
-            #footer{
-                padding-top:0px !important;
-            }
-            
-
-            .animation-demo {
-                margin: 0px -6px 0;
-                margin-bottom: -10px;
-            }
             
             .card img {
                 width: 100%;
@@ -97,17 +45,20 @@
             }
             
             .animation-demo .btn {
-            
-                text-transform: none;
+/*                width: 100%;
+*/                text-transform: none;
             }
             .service-body{
                 padding-top: 25px;
+            }
+            .card p a{
+                color: #fff !important;
             }
 
         </style>
     </head>
     
-    <body ng-app="myApp">
+    <body>
         <header id="header">
             <ul class="header-inner">
                 <li id="menu-trigger" data-trigger="#sidebar">
@@ -118,7 +69,7 @@
                     </div>
                 </li>
                 <li class=" Helpline">
-                    <h2>Youth Helpline</h2>
+                    <h2>Youth Helpline...<i class="md md-phone-iphone"></i></h2>
                 </li>
             
             </ul>
@@ -163,17 +114,66 @@
                     </div>
 
                     <ul class="main-menu">
-                        <li><a href="#/"><i class="md md-home"></i> Home</a></li>
-                        <li><a href="#/career_guidance"><i class="md md-person-add"></i> Career Guidance</a></li>
-                        <li><a href="#/counselling"><i class="md md-account-balance"></i> Counselling</a></li>
-                        <li><a href="#/bank_loan"><i class="md md-home"></i> Education Loan Support</a></li>
-                        <li><a href="#/entrepreneurship"><i class="md md-work"></i> Entrepreuership</a></li>
-                        <li><a href="#/job_seeking"><i class="md md-person"></i> Job Seeking</a></li>
+                        <li><a href="home.html"><i class="md md-home"></i> Home</a></li>
+                        <li><a href="career_guidance.html"><i class="md md-person-add"></i> Career Guidance</a></li>
+                        <li><a href="counselling.html"><i class="md md-account-balance"></i> Counselling</a></li>
+                        <li><a href="bank_loan.html"><i class="md md-home"></i> Bank Loan Support</a></li>
+                        <li><a href="entrepreneurship.html"><i class="md md-work"></i> Entrepreuership</a></li>
+                        <li><a href="job_seeking.html"><i class="md md-person"></i> Job Seeking</a></li>
                     </ul>
                 </div>
             </aside>
-            <div ng-view></div>
+            
+           <section id="content">
+                <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+
+                            <div class="card">
+                                <div class="card-header">
+                                    <h2>Counselling<small>Post your queries get clarity and confidence</small></h2>
+                                </div>
+                                
+                                <div class="card-body card-padding">
+                                    <img src="img/headers/sm/1.png" alt="">
+                                        
+                                    <div class="row animation-demo">
+                                        <div class="col-xs-12">
+                                            <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                <span class="btn btn-primary btn-file m-r-10">
+                                                    <span class="fileinput-new">Select Your Resume</span>
+                                                    <span class="fileinput-exists">Change</span>
+                                                    <input type="file" name="...">
+                                                </span>
+                                                <span class="fileinput-filename"></span>
+                                                <a href="#" class="close fileinput-exists" data-dismiss="fileinput">&times;</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <button class="btn bgm-deeporange"><i class="md md-file-upload"></i> Upload Now</button>
+                                        </div>
+   
+                                    </div>
+                                </div>
+                            </div>
+                            
+                    </div>
+                </div>
+                </div>
             </section>
+        </section>
+        
+        <footer id="footer" style=" padding-top:0px !important;"> 
+            Copyright &copy; 2015 Material Admin
+            
+            <ul class="f-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </footer>
         
         <!-- Older IE warning message -->
         <!--[if lt IE 9]>
@@ -217,70 +217,39 @@
                 <p>Sorry for the inconvenience!</p>
             </div>   
         <![endif]-->
-    
+
         <!-- Javascript Libraries -->
         <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
         <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        
+
         <script src="vendors/bower_components/jquery.nicescroll/jquery.nicescroll.min.js"></script>
         <script src="vendors/bower_components/Waves/dist/waves.min.js"></script>
         <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
         <script src="vendors/bower_components/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="vendors/bower_components/moment/min/moment.min.js"></script>
+        <script src="vendors/bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
+        <script src="vendors/bower_components/nouislider/distribute/jquery.nouislider.all.min.js"></script>
+        <script src="vendors/bower_components/summernote/dist/summernote.min.js"></script>
+        <script src="vendors/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
         
         <!-- Placeholder for IE9 -->
         <!--[if IE 9 ]>
             <script src="vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
         <![endif]-->
         
+        <script src="vendors/chosen_v1.4.2/chosen.jquery.min.js"></script>
+        <script src="vendors/fileinput/fileinput.min.js"></script>
+        <script src="vendors/input-mask/input-mask.min.js"></script>
+        <script src="vendors/farbtastic/farbtastic.min.js"></script>
+        
+        
         <script src="js/functions.js"></script>
         <script src="js/demo.js"></script>
     
-        <script>
-            var app = angular.module("myApp", ["ngRoute"]);
-            app.config(function($routeProvider) {
-                $routeProvider
-                .when("/", {
-                    templateUrl : "service.html",
-                    controller: 'Controller'
-                })
-                .when("/bank_loan", {
-                    templateUrl : "bank_loan.html",
-                    controller: 'Controller'
-                })
+        <!-- Following is only for demo purpose. You may ignore this when you implement -->
 
-                .when("/counselling", {
-                    templateUrl : "counselling.html",
-                    controller: 'Controller'
-
-                })                .when("/career_guidance", {
-                    templateUrl : "career_guidance.html",
-                    controller: 'Controller'
-                })
-                .when("/entrepreneurship", {
-                    templateUrl : "entrepreneurship.html",
-                    controller: 'Controller'
-                })
-                .when("/job_seeking", {
-                    templateUrl : "job_seeking.html",
-                    controller: 'Controller'
-                })
-
-                .when("/profile", {
-                    templateUrl : "profile.html",
-                    controller: 'Controller'
-                })
-                .when("/resume", {
-                    templateUrl : "resume.html",
-                    controller: 'Controller'
-                });
-
-            });
-            app.controller('Controller', function($scope, $routeParams) {
-                $('#sidebar').removeClass('toggled');
-            });
-        </script>
-
+    
     </body>
 
-<!-- Mirrored from 192.185.228.226/projects/ma/v1-4-1/jQuery/icons.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Aug 2015 06:25:35 GMT -->
+<!-- Mirrored from 192.185.228.226/projects/ma/v1-4-1/jQuery/animations.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Aug 2015 06:25:35 GMT -->
 </html>

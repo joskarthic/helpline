@@ -17,8 +17,7 @@
         <!-- CSS -->
         <link href="css/app.min.1.css" rel="stylesheet">
         <link href="css/app.min.2.css" rel="stylesheet">
-        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+        
         <!-- Following CSS codes are used only fore demo purposes thus you can remove anytime -->
         <style type="text/css">
             .Helpline h2{
@@ -33,32 +32,15 @@
                 vertical-align: middle;
         
             }
-            .card-menu{
-            box-shadow: 0 2px 10px -11px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
-                
-            }
-            .card-menu p{
-                padding: 10px 0;
-                margin: 0px !important;
-            }
-            .card{
-            box-shadow: none;
-            margin-bottom: 0px; 
-
-            }
+            
             .card-body .col-sm-4 {
                 padding: 0 7px;
-
-            }
-            .card-body{
-                font-size: 18px;
             }
             
             .card-body .col-sm-1 p {
                 padding: 8px;
                 border-radius: 2px;
                 margin-bottom: 0;
-
                 color: black !important;
             }
             
@@ -78,36 +60,10 @@
             #footer{
                 padding-top:0px !important;
             }
-            
-
-            .animation-demo {
-                margin: 0px -6px 0;
-                margin-bottom: -10px;
-            }
-            
-            .card img {
-                width: 100%;
-                z-index: 1;
-                position: relative;
-            }
-            
-            .animation-demo .col-xs-6 {
-                padding: 0 6px;
-                margin-bottom: 12px;
-            }
-            
-            .animation-demo .btn {
-            
-                text-transform: none;
-            }
-            .service-body{
-                padding-top: 25px;
-            }
-
         </style>
     </head>
     
-    <body ng-app="myApp">
+    <body>
         <header id="header">
             <ul class="header-inner">
                 <li id="menu-trigger" data-trigger="#sidebar">
@@ -118,7 +74,7 @@
                     </div>
                 </li>
                 <li class=" Helpline">
-                    <h2>Youth Helpline</h2>
+                    <h2>Youth Helpline...<i class="md md-phone-iphone"></i></h2>
                 </li>
             
             </ul>
@@ -163,17 +119,52 @@
                     </div>
 
                     <ul class="main-menu">
-                        <li><a href="#/"><i class="md md-home"></i> Home</a></li>
-                        <li><a href="#/career_guidance"><i class="md md-person-add"></i> Career Guidance</a></li>
-                        <li><a href="#/counselling"><i class="md md-account-balance"></i> Counselling</a></li>
-                        <li><a href="#/bank_loan"><i class="md md-home"></i> Education Loan Support</a></li>
-                        <li><a href="#/entrepreneurship"><i class="md md-work"></i> Entrepreuership</a></li>
-                        <li><a href="#/job_seeking"><i class="md md-person"></i> Job Seeking</a></li>
+                        <li><a href="home.html"><i class="md md-home"></i> Home</a></li>
+                        <li><a href="career_guidance.html"><i class="md md-person-add"></i> Career Guidance</a></li>
+                        <li><a href="counselling.html"><i class="md md-account-balance"></i> Counselling</a></li>
+                        <li><a href="bank_loan.html"><i class="md md-home"></i> Bank Loan Support</a></li>
+                        <li><a href="entrepreneurship.html"><i class="md md-work"></i> Entrepreuership</a></li>
+                        <li><a href="job_seeking.html"><i class="md md-person"></i> Job Seeking</a></li>
                     </ul>
                 </div>
             </aside>
-            <div ng-view></div>
+            
+    
+           
+            <section id="content">
+                <div class="container">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>How can we help You??</h2>
+                        </div>
+                    
+                        <div class="card-body card-padding">
+                            <div class="row">
+                                
+                                <div class="col-sm-12 col-xs-12"><p><a href="career_guidance.html"> <button class="btn bgm-deeporange btn-icon waves-effect waves-circle waves-float"><i class="md md-school "></i></button>&nbsp;&nbsp;Career Guidance</a></p></div>
+                                <div class="col-sm-12 col-xs-12"><p><a href="counselling.html"><button class="btn bgm-deeporange btn-icon waves-effect waves-circle waves-float"><i class="md md-person-add"></i> </button>&nbsp;&nbsp;Counselling</a></p></div>
+                                <div class="col-sm-12 col-xs-12"><p><a href="bank_loan.html"><button class="btn bgm-deeporange btn-icon waves-effect waves-circle waves-float"><i class="md md-account-balance"></i></button>&nbsp;&nbsp;Bank Loan Support</a></p></div>
+                                <div class="col-sm-12 col-xs-12"><p><a href="entrepreneurship.html"><button class="btn bgm-deeporange btn-icon waves-effect waves-circle waves-float"><i class="md md-work"></i></button>&nbsp;&nbsp;Entrepreneurship</a></p></div>
+                                <div class="col-sm-12 col-xs-12"><p><a href="job_seeking.html"><button class="btn bgm-deeporange btn-icon waves-effect waves-circle waves-float"><i class="md md-person"></i></button>&nbsp;&nbsp;Job Seeking</a></p></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </section>
+        </section>
+        
+        <footer id="footer" style=" padding-top:0px !important;"> 
+            Copyright &copy; 2015 Material Admin
+            
+            <ul class="f-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </footer>
         
         <!-- Older IE warning message -->
         <!--[if lt IE 9]>
@@ -235,51 +226,7 @@
         <script src="js/functions.js"></script>
         <script src="js/demo.js"></script>
     
-        <script>
-            var app = angular.module("myApp", ["ngRoute"]);
-            app.config(function($routeProvider) {
-                $routeProvider
-                .when("/", {
-                    templateUrl : "service.html",
-                    controller: 'Controller'
-                })
-                .when("/bank_loan", {
-                    templateUrl : "bank_loan.html",
-                    controller: 'Controller'
-                })
-
-                .when("/counselling", {
-                    templateUrl : "counselling.html",
-                    controller: 'Controller'
-
-                })                .when("/career_guidance", {
-                    templateUrl : "career_guidance.html",
-                    controller: 'Controller'
-                })
-                .when("/entrepreneurship", {
-                    templateUrl : "entrepreneurship.html",
-                    controller: 'Controller'
-                })
-                .when("/job_seeking", {
-                    templateUrl : "job_seeking.html",
-                    controller: 'Controller'
-                })
-
-                .when("/profile", {
-                    templateUrl : "profile.html",
-                    controller: 'Controller'
-                })
-                .when("/resume", {
-                    templateUrl : "resume.html",
-                    controller: 'Controller'
-                });
-
-            });
-            app.controller('Controller', function($scope, $routeParams) {
-                $('#sidebar').removeClass('toggled');
-            });
-        </script>
-
+    
     </body>
 
 <!-- Mirrored from 192.185.228.226/projects/ma/v1-4-1/jQuery/icons.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Aug 2015 06:25:35 GMT -->

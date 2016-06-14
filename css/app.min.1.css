@@ -5,13 +5,14 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
 html {
-  font-family: sans-serif;
+  font-family: icon;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
+  background: #fff !important;
 }
 
 article,
@@ -1403,7 +1404,7 @@ html {
 }
 
 body {
-  font-family: roboto;
+  font-family: 'icon';
   font-size: 13px;
   line-height: 1.42857143;
   color: #5e5e5e;
@@ -1985,8 +1986,8 @@ pre code {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+/*  padding-left: 15px;
+  padding-right: 15px;*/
 }
 
 @media (min-width: 768px) {
@@ -9671,9 +9672,9 @@ body {
 
 body {
   font-weight: 400;
-  padding-top: 65px;
-  padding-bottom: 110px;
-  -webkit-animation-name: fadeIn;
+  padding-top: 35px;
+/*  padding-bottom: 110px;
+*/  -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1000ms;
   animation-duration: 1000ms;
@@ -9741,7 +9742,7 @@ h6 small,
 }
 
 body #content {
-  padding: 30px 0;
+  padding: 30px 0  0 0;
 }
 
 @media (min-width: 1200px) {
@@ -9759,7 +9760,7 @@ body #content {
 #header {
   background: #4285F4;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
-  height: 65px;
+  height: 50px;
   position: fixed;
   z-index: 10;
   width: 100%;
@@ -9786,7 +9787,7 @@ body #content {
 
 .header-inner {
   list-style: none;
-  padding: 15px 0;
+  padding: 11px 0;
 }
 
 .header-inner > li {
@@ -9820,10 +9821,10 @@ body #content {
 #menu-trigger:before {
   content: "";
   position: absolute;
-  top: 9px;
+  top: 3px;
   left: 7px;
-  width: 45px;
-  height: 45px;
+  width: 39px;
+  height: 39px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.22);
   -webkit-transition: all;
@@ -10236,7 +10237,7 @@ body #content {
   position: fixed;
   background: #fff;
   box-shadow: 0 0 10px rgba(51, 51, 51, 0.38);
-  top: 65px;
+  top: 50px;
   height: calc(100% - 65px);
   -webkit-transform: translate3d(-268px, 0, 0);
   transform: translate3d(-268px, 0, 0);
@@ -11112,6 +11113,7 @@ input:focus {
 
 .card .card-header {
   position: relative;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -11129,7 +11131,7 @@ input:focus {
 .card .card-header h2 {
   margin: 0;
   line-height: 100%;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 400;
 }
 
@@ -16006,19 +16008,22 @@ body.login-content:before {
   transition: all;
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms;
-  margin: 10px 20px;
+  margin: 6px 20px 10px;
 }
 
 .line-wrap .line {
   width: 18px;
-  height: 2px;
+  height: 3px;
   -webkit-transition: all;
   -o-transition: all;
   transition: all;
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms;
 }
+.open .line-wrap .line {
+    height: 2px;
 
+}
 .line-wrap .line.center {
   margin: 3px 0;
 }
